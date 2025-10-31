@@ -212,7 +212,15 @@ document.querySelectorAll('.read-more').forEach(link => {
 // Generate fallback placeholder SVG for project images
 function getImagePlaceholder(text = 'Add Image Here') {
     // Using viewBox for proper scaling - the SVG will adapt to the container size
-    return `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150'%3E%3Crect width='200' height='150' fill='%230a0e27'/%3E%3Ctext x='50%25' y='50%25' fill='%2300ff41' font-family='monospace' font-size='12' text-anchor='middle' dominant-baseline='middle'%3E${encodeURIComponent(text)}%3C/text%3E%3C/svg%3E`;
+    const svg = [
+        `%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150'%3E`,
+        `%3Crect width='200' height='150' fill='%230a0e27'/%3E`,
+        `%3Ctext x='50%25' y='50%25' fill='%2300ff41' font-family='monospace' font-size='12' `,
+        `text-anchor='middle' dominant-baseline='middle'%3E${encodeURIComponent(text)}%3C/text%3E`,
+        `%3C/svg%3E`
+    ].join('');
+    
+    return `data:image/svg+xml,${svg}`;
 }
 
 // Handle image loading errors for project images

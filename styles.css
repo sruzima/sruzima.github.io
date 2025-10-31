@@ -255,6 +255,12 @@ h3 {
     margin-bottom: 5px;
 }
 
+.image-instructions {
+    margin-top: 20px;
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}
+
 /* Quick Stats */
 .quick-stats {
     display: grid;
