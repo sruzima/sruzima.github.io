@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solomon Ruzima - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">solomon@portfolio:~$</div>
+        </div>
+        
+        <nav class="nav-menu">
+            <a href="#home" class="nav-link active">~/home</a>
+            <a href="#about" class="nav-link">~/about</a>
+            <a href="#skills" class="nav-link">~/skills</a>
+            <a href="#blog" class="nav-link">~/blog</a>
+            <a href="#contact" class="nav-link">~/contact</a>
+        </nav>
+
+        <main class="content">
+            <!-- Home Section -->
+            <section id="home" class="section active">
+                <div class="typing-effect">
+                    <h1><span class="prompt">root@solomon:~$</span> whoami</h1>
+                    <div class="output">
+                        <h2>Solomon Ruzima</h2>
+                        <p class="subtitle">Software Engineer | Full Stack Developer | Tech Enthusiast</p>
+                        <p class="bio">Building scalable solutions and exploring the digital frontier...</p>
+                    </div>
+                </div>
+                
+                <div class="ascii-art">
+                    <pre>
+  _____       _                               
+ / ____|     | |                              
+| (___   ___ | | ___  _ __ ___   ___  _ __   
+ \___ \ / _ \| |/ _ \| '_ ` _ \ / _ \| '_ \  
+ ____) | (_) | | (_) | | | | | | (_) | | | | 
+|_____/ \___/|_|\___/|_| |_| |_|\___/|_| |_| 
+                                              
+    </pre>
+                </div>
+
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Status:</span>
+                        <span class="stat-value blink">ONLINE</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Location:</span>
+                        <span class="stat-value">Remote</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Specialization:</span>
+                        <span class="stat-value">Full Stack Development</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h2><span class="prompt">root@solomon:~$</span> cat about.txt</h2>
+                <div class="output">
+                    <div class="about-content">
+                        <h3>About Me</h3>
+                        <p>I am a passionate software engineer with expertise in building robust and scalable applications. My journey in technology has been driven by curiosity and a relentless pursuit of innovation.</p>
+                        
+                        <h3>Professional Background</h3>
+                        <p>With experience spanning multiple domains of software development, I specialize in creating efficient solutions that solve real-world problems. I believe in writing clean, maintainable code and following best practices.</p>
+                        
+                        <h3>Philosophy</h3>
+                        <p class="code-block">
+                            <span class="comment">// My approach to software development</span><br>
+                            <span class="keyword">const</span> philosophy = {<br>
+                            &nbsp;&nbsp;cleanCode: <span class="string">"always"</span>,<br>
+                            &nbsp;&nbsp;testing: <span class="string">"essential"</span>,<br>
+                            &nbsp;&nbsp;learning: <span class="string">"continuous"</span>,<br>
+                            &nbsp;&nbsp;collaboration: <span class="string">"key to success"</span><br>
+                            };
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <h2><span class="prompt">root@solomon:~$</span> ls -la skills/</h2>
+                <div class="output">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>├── Languages</h3>
+                            <ul>
+                                <li><span class="file-icon">📄</span> JavaScript / TypeScript</li>
+                                <li><span class="file-icon">📄</span> Python</li>
+                                <li><span class="file-icon">📄</span> Java</li>
+                                <li><span class="file-icon">📄</span> SQL</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>├── Frontend</h3>
+                            <ul>
+                                <li><span class="file-icon">📄</span> React.js</li>
+                                <li><span class="file-icon">📄</span> Vue.js</li>
+                                <li><span class="file-icon">📄</span> HTML5 / CSS3</li>
+                                <li><span class="file-icon">📄</span> Responsive Design</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>├── Backend</h3>
+                            <ul>
+                                <li><span class="file-icon">📄</span> Node.js</li>
+                                <li><span class="file-icon">📄</span> Express.js</li>
+                                <li><span class="file-icon">📄</span> RESTful APIs</li>
+                                <li><span class="file-icon">📄</span> Database Design</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>└── Tools & Others</h3>
+                            <ul>
+                                <li><span class="file-icon">📄</span> Git / GitHub</li>
+                                <li><span class="file-icon">📄</span> Docker</li>
+                                <li><span class="file-icon">📄</span> CI/CD</li>
+                                <li><span class="file-icon">📄</span> Agile Methodology</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Section -->
+            <section id="blog" class="section">
+                <h2><span class="prompt">root@solomon:~$</span> cat blog/*.md</h2>
+                <div class="output">
+                    <div class="blog-posts">
+                        <article class="blog-post">
+                            <div class="post-header">
+                                <h3>Understanding Asynchronous JavaScript</h3>
+                                <span class="post-date">[2024-10-15]</span>
+                            </div>
+                            <div class="post-content">
+                                <p>Asynchronous programming is a cornerstone of modern JavaScript development. Let's dive deep into callbacks, promises, and async/await...</p>
+                                <div class="code-block">
+                                    <span class="comment">// Example: Using async/await</span><br>
+                                    <span class="keyword">async function</span> fetchData() {<br>
+                                    &nbsp;&nbsp;<span class="keyword">try</span> {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">const</span> response = <span class="keyword">await</span> fetch(url);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">const</span> data = <span class="keyword">await</span> response.json();<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> data;<br>
+                                    &nbsp;&nbsp;} <span class="keyword">catch</span> (error) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;console.error(error);<br>
+                                    &nbsp;&nbsp;}<br>
+                                    }
+                                </div>
+                                <a href="#" class="read-more">Read more →</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post">
+                            <div class="post-header">
+                                <h3>Building Scalable Backend Systems</h3>
+                                <span class="post-date">[2024-09-28]</span>
+                            </div>
+                            <div class="post-content">
+                                <p>Scalability is crucial for modern applications. Here's what I learned about designing systems that can handle millions of requests...</p>
+                                <ul class="post-list">
+                                    <li>Microservices architecture patterns</li>
+                                    <li>Database optimization techniques</li>
+                                    <li>Caching strategies with Redis</li>
+                                    <li>Load balancing and horizontal scaling</li>
+                                </ul>
+                                <a href="#" class="read-more">Read more →</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post">
+                            <div class="post-header">
+                                <h3>Clean Code Principles Every Developer Should Know</h3>
+                                <span class="post-date">[2024-09-10]</span>
+                            </div>
+                            <div class="post-content">
+                                <p>Writing clean, maintainable code is an art. These principles have transformed how I approach software development...</p>
+                                <ul class="post-list">
+                                    <li>SOLID principles in practice</li>
+                                    <li>DRY (Don't Repeat Yourself)</li>
+                                    <li>Meaningful naming conventions</li>
+                                    <li>Code review best practices</li>
+                                </ul>
+                                <a href="#" class="read-more">Read more →</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post">
+                            <div class="post-header">
+                                <h3>My Journey into DevOps and CI/CD</h3>
+                                <span class="post-date">[2024-08-22]</span>
+                            </div>
+                            <div class="post-content">
+                                <p>Automation is key to modern software delivery. Here's how I integrated DevOps practices into my workflow...</p>
+                                <div class="code-block">
+                                    <span class="comment"># Docker deployment example</span><br>
+                                    docker build -t myapp:latest .<br>
+                                    docker run -p 8080:8080 myapp:latest
+                                </div>
+                                <a href="#" class="read-more">Read more →</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <h2><span class="prompt">root@solomon:~$</span> cat contact.json</h2>
+                <div class="output">
+                    <div class="contact-info">
+                        <pre class="code-block">
+{
+  <span class="string">"name"</span>: <span class="string">"Solomon Ruzima"</span>,
+  <span class="string">"role"</span>: <span class="string">"Software Engineer"</span>,
+  <span class="string">"email"</span>: <span class="string">"solomon.ruzima@example.com"</span>,
+  <span class="string">"linkedin"</span>: <span class="string">"linkedin.com/in/solomon-ruzima"</span>,
+  <span class="string">"github"</span>: <span class="string">"github.com/sruzima"</span>,
+  <span class="string">"availability"</span>: <span class="string">"Open to opportunities"</span>,
+  <span class="string">"timezone"</span>: <span class="string">"UTC"</span>
+}
+                        </pre>
+                        
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/solomon-ruzima" target="_blank" class="social-link">
+                                <span class="prompt">$</span> open linkedin
+                            </a>
+                            <a href="https://github.com/sruzima" target="_blank" class="social-link">
+                                <span class="prompt">$</span> open github
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="terminal-footer">
+            <p><span class="prompt">root@solomon:~$</span> echo "© 2024 Solomon Ruzima. All rights reserved."</p>
+            <p class="footer-note">Built with <span class="blink">█</span> passion and code</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
