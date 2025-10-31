@@ -209,6 +209,22 @@ document.querySelectorAll('.read-more').forEach(link => {
     });
 });
 
+// Generate fallback placeholder SVG for project images
+function getImagePlaceholder(text = 'Add Image Here') {
+    return `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150'%3E%3Crect width='200' height='150' fill='%230a0e27'/%3E%3Ctext x='50%25' y='50%25' fill='%2300ff41' font-family='monospace' font-size='12' text-anchor='middle' dominant-baseline='middle'%3E${encodeURIComponent(text)}%3C/text%3E%3C/svg%3E`;
+}
+
+// Handle image loading errors for project images
+document.addEventListener('DOMContentLoaded', function() {
+    const projectImages = document.querySelectorAll('.project-image');
+    projectImages.forEach(img => {
+        img.addEventListener('error', function() {
+            const fallbackText = this.getAttribute('data-fallback-text') || 'Add Image Here';
+            this.src = getImagePlaceholder(fallbackText);
+        });
+    });
+});
+
 // Log a welcome message to console
 console.log('%c Welcome to Solomon Ruzima\'s Portfolio! ', 'background: #00ff41; color: #0a0e27; font-size: 20px; font-weight: bold; padding: 10px;');
 console.log('%c Keyboard Shortcuts: Alt + 1-5 to navigate sections ', 'background: #0a0e27; color: #00ff41; font-size: 14px; padding: 5px;');
