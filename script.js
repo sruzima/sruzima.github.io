@@ -105,9 +105,23 @@ function createMatrixRain() {
     const columns = Math.floor(canvas.width / 20);
     const drops = Array(columns).fill(1);
 
-    const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+    const chars = ['0', '1', 'ア', 'イ', 'ウ', 'エ', 'オ', 'カ', 'キ', 'ク', 'ケ', 'コ', 'サ', 'シ', 'ス', 'セ', 'ソ', 'タ', 'チ', 'ツ', 'テ', 'ト', 'ナ', 'ニ', 'ヌ', 'ネ', 'ノ', 'ハ', 'ヒ', 'フ', 'ヘ', 'ホ', 'マ', 'ミ', 'ム', 'メ', 'モ', 'ヤ', 'ユ', 'ヨ', 'ラ', 'リ', 'ル', 'レ', 'ロ', 'ワ', 'ヲ', 'ン'];
 
-    function draw() {
+    let lastTime = 0;
+    const fps = 20; // 20 frames per second (50ms interval)
+    const fpsInterval = 1000 / fps;
+
+    function draw(currentTime) {
+        requestAnimationFrame(draw);
+        
+        const elapsed = currentTime - lastTime;
+        
+        if (elapsed < fpsInterval) {
+            return;
+        }
+        
+        lastTime = currentTime - (elapsed % fpsInterval);
+        
         ctx.fillStyle = 'rgba(10, 14, 39, 0.05)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -128,7 +142,7 @@ function createMatrixRain() {
         }
     }
 
-    setInterval(draw, 50);
+    requestAnimationFrame(draw);
 
     // Resize canvas on window resize
     window.addEventListener('resize', () => {
